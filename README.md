@@ -25,12 +25,12 @@ Follow this and you will be happy. Seriously.
   - Count to 10 and start writing
 
 ### 3. Thou shalt use Roles
-  - What you'll do can be reused? Pick a role;
-  - The Role doesn't yet exist? Create a new one;
-  - The new Role is generic and can be reused? No? So, change it!
+  - What you'll do can be reused? Pick a `role`;
+  - The `role` doesn't yet exist? Create a new one;
+  - The new `role` is generic and can be reused? No? So, change it!
 
 ### 4. Thou shalt always choose Modules in the right order
-  When you need a Module, start looking for:
+  When you need a module, start looking for:
   - Official (`ansible-modules`)
   - Extra (`ansible-modules-extra`)
   - Community (modules maintained by community)
@@ -40,9 +40,9 @@ Follow this and you will be happy. Seriously.
   - Use `shell`/`command`/`raw` modules (the least priority; use **only** when **EXTREMELLY necessary**)
 
 ### 5. Thou shalt not use fixed values in Playbooks and Roles
-  - When possible, never fix values inside of a Playbook
-  - The same is valid for the Roles
-  - Use variables, that can be passed by the user from outside
+  - When possible, never fix values inside of a `playbook`
+  - The same is valid for the `roles`
+  - Use `variables`, that can be passed by the user from outside
   - Variables can be passed from a large variety of places and files
   - Variables are cool ;)
 
@@ -50,19 +50,19 @@ Follow this and you will be happy. Seriously.
   - Some files are static, and it's OK to copy them just as they are
   - But a lot of files has configurations and settings - and they can change
   - Use **jinja2** to create template files (`file.j2`)
-  - Use `template` Module for templating tasks
+  - Use `template` module for templating tasks
 
 ### 7. Remember the Idempotence
-  - Running a playbook should define a desired **state**
-  - Running the same playbook again should still guarantee the same **state**
-  - Running the same playbook again² should still guarantee the same **state**
-  - Running the same playbook again³ should still guarantee the same **state**
+  - Running a `playbook` should define a desired **state**
+  - Running the same `playbook` again should still guarantee the same **state**
+  - Running the same `playbook` again² should still guarantee the same **state**
+  - Running the same `playbook` again³ should still guarantee the same **state**
   - Yeah, I think you got it...
 
 ### 8. Honour thy community
-  - When you create a new Module, share it with the community
+  - When you create a new `module`, share it with the community
   - This way you help other people, and they can even improove your job
-  - Remember that you are using Modules that they brought to you
+  - Remember that you are using modules that they brought to you
 
 ### 9. Ye shall TEST
   - When you first create a `playbook`, you need to test it
