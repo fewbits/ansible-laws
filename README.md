@@ -12,24 +12,24 @@ ________________________________________________________________________________
 
 Follow this and you will be happy. Seriously.
 
-1. I am the tool for automation, configuration and provisioning
-  - Use Ansible to automate complicated or recurrent tasks
-  - Use Ansible to change configuration values on devices or applications
-  - Use Ansible for provisioning new environments
+### 1. I am the tool for automation, configuration and provisioning
+  - Use *Ansible* to automate complicated or recurrent tasks
+  - Use *Ansible* to change configuration values on devices or applications
+  - Use *Ansible* for provisioning new environments
 
-2. Thou shalt think before start writing
+### 2. Thou shalt think before start writing
   - Plan the tasks you need to automate
   - Plan how to make them reusable
   - Share your plans with your team
   - Make the necessary changes
   - Count to 10 and start writing
 
-3. Thou shalt use Roles
+### 3. Thou shalt use Roles
   - What you'll do can be reused? Pick a role;
   - The Role doesn't yet exist? Create a new one;
   - The new Role is generic and can be reused? No? So, change it!
 
-4. Thou shalt always choose Modules in the right order
+### 4. Thou shalt always choose Modules in the right order
   When you need a Module, start looking for:
   - Official (`ansible-modules`)
   - Extra (`ansible-modules-extra`)
@@ -39,32 +39,32 @@ Follow this and you will be happy. Seriously.
   - Create (yes, make your own `module.py`)
   - Use `shell`/`command`/`raw` modules (the least priority; use **only** when **EXTREMELLY necessary**)
 
-5. Thou shalt not use fixed values in Playbooks and Roles
+### 5. Thou shalt not use fixed values in Playbooks and Roles
   - When possible, never fix values inside of a Playbook
   - The same is valid for the Roles
   - Use variables, that can be passed by the user from outside
   - Variables can be passed from a large variety of places and files
   - Variables are cool ;)
 
-6. Thou shalt not use files when templates could be used
+### 6. Thou shalt not use files when templates could be used
   - Some files are static, and it's OK to copy them just as they are
   - But a lot of files has configurations and settings - and they can change
   - Use **jinja2** to create template files (`file.j2`)
   - Use `template` Module for templating tasks
 
-7. Remember the Idempotence
+### 7. Remember the Idempotence
   - Running a playbook should define a desired **state**
   - Running the same playbook again should still guarantee the same **state**
   - Running the same playbook again² should still guarantee the same **state**
   - Running the same playbook again³ should still guarantee the same **state**
   - Yeah, I think you got it...
 
-8. Honour thy community
+### 8. Honour thy community
   - When you create a new Module, share it with the community
   - This way you help other people, and they can even improove your job
   - Remember that you are using Modules that they brought to you
 
-9. Ye shall TEST
+### 9. Ye shall TEST
   - When you first create a `playbook`, you need to test it
   - When you first create a `role`, you need to test it
   - When you first create a `module`, you need to test it
@@ -72,7 +72,7 @@ Follow this and you will be happy. Seriously.
   - Do automatic unitary tests
   - Do automatic recursive tests
 
-10. Ye shall DOCUMENT
+### 10. Ye shall DOCUMENT
   - Document `playbooks`
   - Document `roles`
   - Document `modules`
